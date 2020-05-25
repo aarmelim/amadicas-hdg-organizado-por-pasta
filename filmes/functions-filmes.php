@@ -1,6 +1,6 @@
 <?php
 
-require_once('../config.php');
+require_once('../config-dev.php');
 require_once(DBAPI);
 
 $filmes = null;

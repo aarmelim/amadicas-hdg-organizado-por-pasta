@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 ?>
-<?php require_once '../config.php'; ?>
+<?php require_once '../config-dev.php'; ?>
 <?php require_once DBAPI; ?>
 <?php $db = open_database(); ?>
 <?php 
@@ -13,23 +13,17 @@ ini_set('display_errors', 'On');
 <?php 
     include(HEADER_TEMPLATE); 
 ?>
-
 <header>
-    <div class="row">
-        <div class="col-sm-6">
-            <h2>Filmes</h2>
+        <div class="row">
+            <div class="col-sm-6 text-left">
+                <h2>Filmes</h2>
+            </div>
+            <div class="col-sm-6 text-right"> 
+                <a href="add-filmes.php">
+                    Novo Filme
+                </a> 
+            </div>
         </div>
-        <div class="col-sm-6 text-right h2"> 
-            <a class="btn btn-primary" href="add-filmes.php">
-                <i class="fa fa-plus"></i> 
-                Novo Filme
-            </a> 
-            <a class="btn btn-default" href="index.php">
-                <i class="fa fa-refresh"></i> 
-                Atualizar
-            </a> 
-        </div>
-    </div>
 </header>
 
 <?php if (!empty($_SESSION['message'])) : ?> 
@@ -43,33 +37,27 @@ ini_set('display_errors', 'On');
 
 <hr>
 <?php if ($db) : ?>
-    <table class="table table-hover">
-        <thead>
+    <div class="table-responsive">
+    <table class="table table-sm table-hover">
+        <thead class="thead-light">
             <tr>
-                <th>ID</th>
-                <th width="30%">Nome do Filme</th>
-                <th>Data em que vi o filme</th>
+                <th scope="col">Nome do Filme</th>
+                <th scope="col">Data em que vi</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody> 
             <?php if ($filmes) : ?> 
                 <?php foreach ($filmes as $filme) : ?> 
                     <tr>
-                        <td><?php echo $filme['id']; ?></td>
                         <td><?php echo $filme['nome_filme']; ?></td>
                         <td><?php echo $filme['data_criacao']; ?></td>
                         <td class="actions text-right"> 
-                            <a href="view-filmes.php?id=<?php echo $filme['id']; ?>" class="btn btn-sm btn-success">
-                                <i class="fa fa-eye"></i> 
-                                Visualizar
-                            </a> 
                             <a href="edit-filmes.php?id=<?php echo $filme['id']; ?>" class="btn btn-sm btn-warning">
-                                <i class="fa fa-pencil"></i> 
-                                Editar
+                                e
                             </a> 
                             <a href="delete-filmes.php?id=<?php echo $filme['id']; ?>" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-filme="<?php echo $filme['id']; ?>"> 
-                                <i class="fa fa-trash"></i> 
-                                Excluir 
+                                x  
                             </a> 
                         </td>
                     </tr> 
@@ -81,9 +69,10 @@ ini_set('display_errors', 'On');
             <?php endif; ?> 
         </tbody>
     </table>
+    </div>
 <?php else : ?> <div class="alert alert-danger" role="alert">
         <p><strong>ERRO:</strong> Não foi possível Conectar ao Banco de Dados!</p>
     </div>
 <?php endif; ?>
-<?php include('modal-filmes.php'); ?>
+
 <?php include(FOOTER_TEMPLATE); ?>
