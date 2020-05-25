@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="amadicas.cf">
+            <a class="navbar-brand" href="<?php echo BASEURL; ?>">
                 <img src="<?php echo BASEURL; ?>_img/faviconAMADICAS.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 AMADICAS
             </a>
