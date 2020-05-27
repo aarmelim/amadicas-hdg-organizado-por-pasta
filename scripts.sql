@@ -9,6 +9,7 @@ CREATE TABLE filmes
     nota_filme varchar(3),
     plataforma varchar(255),
     descricao varchar(255),
+    situacao varchar(40),
     data_criacao datetime NOT NULL,
     data_modificacao datetime NOT NULL
 
