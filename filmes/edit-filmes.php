@@ -21,9 +21,13 @@
         </div>
     </div>
     <div class="row">
-        <div class="form-group col-sm-12"> 
+        <div class="form-group col-sm-10"> 
             <label for="descricao">Descrição</label> 
             <input type="textarea" class="form-control" name="filme['descricao']" value="<?php echo $filme['descricao']; ?>">
+        </div>
+        <div class="form-group col-sm-2"> 
+            <label for="descricao">Plataforma</label> 
+            <input type="textarea" class="form-control" name="filme['plataforma']" value="<?php echo $filme['plataforma']; ?>">
         </div>
     </div>
     <div id="actions" class="row">

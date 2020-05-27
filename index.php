@@ -19,17 +19,7 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <a href="filmes" class="btn btn-info">
-                        <div class="col-xs-12 text-center">
-                            <i class="fa fa-podcast fa-5x"></i>
-                            <p>Podcast</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <a href="filmes" class="btn btn-info">
+                    <a href="livros" class="btn btn-info">
                         <div class="col-xs-12 text-center">
                             <i class="fa fa-book fa-5x"></i>
                             <p>Livros</p>
@@ -39,7 +29,17 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <a href="filmes" class="btn btn-info">
+                    <a href="#" class="btn btn-info">
+                        <div class="col-xs-12 text-center">
+                            <i class="fa fa-podcast fa-5x"></i>
+                            <p>Podcast</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <a href="#" class="btn btn-info">
                         <div class="col-xs-12 text-center">
                             <i class="fa fa-music fa-5x"></i>
                             <p>Musicas</p>
@@ -49,7 +49,7 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <a href="filmes" class="btn btn-info">
+                    <a href="#" class="btn btn-info">
                         <div class="col-xs-12 text-center">
                             <i class="fa fa-coffee fa-5x"></i>
                             <p>Idéias</p>
@@ -59,7 +59,7 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <a href="filmes" class="btn btn-info">
+                    <a href="#" class="btn btn-info">
                         <div class="col-xs-12 text-center">
                             <i class="fa fa-paper-plane fa-5x"></i>
                             <p>Trilhas</p>
