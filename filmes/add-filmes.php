@@ -12,9 +12,13 @@
     <!-- area de campos do form -->
     <hr />
     <div class="row">
-        <div class="form-group col-md-10"> 
+        <div class="form-group col-md-6"> 
             <label for="nome_filme">Nome do Filme</label> 
             <input type="text" class="form-control" name="filme['nome_filme']"> 
+        </div>
+        <div class="form-group col-md-4"> 
+            <label for="situacao">Situação</label> 
+            <input type="text" class="form-control" name="filme['situacao']"> 
         </div>
         <div class="form-group col-md-2"> 
             <label for="nota_filme">Nota do Filme</label> 

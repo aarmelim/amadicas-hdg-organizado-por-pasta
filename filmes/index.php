@@ -42,7 +42,8 @@ ini_set('display_errors', 'On');
         <thead class="thead-light">
             <tr>
                 <th scope="col">Nome do Filme</th>
-                <th scope="col">Data em que vi</th>
+                <th scope="col">Situação</th>
+                <th scope="col">Data incluido</th>
                 <th scope="col"></th>
             </tr>
         </thead>
@@ -51,6 +52,7 @@ ini_set('display_errors', 'On');
                 <?php foreach ($filmes as $filme) : ?> 
                     <tr>
                         <td><?php echo $filme['nome_filme']; ?></td>
+                        <td><?php echo $filme['situacao']; ?></td>
                         <td><?php echo $filme['data_criacao']; ?></td>
                         <td class="actions text-right"> 
                             <a href="edit-filmes.php?id=<?php echo $filme['id']; ?>" class="btn btn-sm btn-warning">
