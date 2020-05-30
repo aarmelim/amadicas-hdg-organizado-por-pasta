@@ -19,7 +19,7 @@ ini_set('display_errors', 'On');
                 <h2>Filmes</h2>
             </div>
             <div class="col-sm-6 text-right"> 
-                <a href="add-filmes.php">
+                <a href="add-filmes.php" class="alert-link">
                     Novo Filme
                 </a> 
             </div>
@@ -43,7 +43,7 @@ ini_set('display_errors', 'On');
             <tr>
                 <th scope="col">Nome do Filme</th>
                 <th scope="col">Situação</th>
-                <th scope="col">Data incluido</th>
+                <th scope="col">Data</th>
                 <th scope="col"></th>
             </tr>
         </thead>
