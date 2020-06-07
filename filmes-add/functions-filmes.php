@@ -1,16 +1,24 @@
 <?php
 
-require_once('../config.php');
+require_once('../config-dev.php');
 require_once(DBAPI);
 
 $filmes = null;
 $filme = null;
+$situacao = null;
 
-/**	 *  Listagem de Filmes	 */    
+/**	 *  Listagem de Filmes - todos	 */    
 function index()
 {
     global $filmes;
     $filmes = find_all('filmes');
+}
+
+/**	 *  Listagem de Filmes - ordenado por campo 'situacao'	 */    
+function index_orderbyfild($fild)
+{
+    global $filmes;
+    $filmes = find_all_orderbyfild('filmes',null,$fild);
 }
 
 /**	 *  Cadastro de Filmes	 */	
