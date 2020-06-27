@@ -100,7 +100,7 @@
         </p>
       </blockquote>
       <h4>
-        Livro: <a href="Livro-A-Velocidade-da-Luz-Javier-Cercas.mobi">A Velocidade da Luz - Javier Cercas</a>
+        Livro: <a href="arquivos/livros/Livro-A-Velocidade-da-Luz-Javier-Cercas.mobi">A Velocidade da Luz - Javier Cercas</a>
       </h4>
       <blockquote>
         <p class="font-italic">
