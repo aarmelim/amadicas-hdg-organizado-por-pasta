@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 ?>
-<?php require_once '../config-dev.php'; ?>
+<?php require_once '../config.php'; ?>
 <?php require_once DBAPI; ?>
 <?php $db = open_database(); ?>
 <?php 
