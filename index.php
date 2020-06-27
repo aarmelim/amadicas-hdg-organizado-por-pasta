@@ -81,9 +81,9 @@
       <p class="lead">Dicas de conteúdo que consumo no meu dia a dia. Passarei dicas de livros, filmes, séries, textos, tecnologias, podcasts, frases, sites, pessoas, entre muitas outras coisas.</p>
     </div>
     <?php
-          if (isset($retorno['mensagem'])) {
-            echo "<div class='p-3 mb-2 bg-info text-white'><p class='font-italic text-monospace'>" . $retorno['mensagem'] . "</p></div>";
-          }
+    if (isset($retorno['mensagem'])) {
+      echo "<div class='p-3 mb-2 bg-info text-white'><p class='font-italic text-monospace'>" . $retorno['mensagem'] . "</p></div>";
+    }
     ?>
     <div class="blog-post">
       <h2 class="blog-post-title">Minha primeira dica</h2>
@@ -99,14 +99,21 @@
           Bem, diante disso vou começar com a indicação de um livro que li recentemente. Pensei em várias sugestões pois tenho lido muitos livros diferentes. Mas vou começar indicando o que eu mais gostei de ler recentemente.
         </p>
       </blockquote>
-      <h4>
-        Livro: <a href="arquivos/livros/Livro-A-Velocidade-da-Luz-Javier-Cercas.mobi">A Velocidade da Luz - Javier Cercas</a>
-      </h4>
       <blockquote>
-        <p class="font-italic">
-          <strong>Resenha ofical: </strong>
-          Espanha, final dos anos 80. Um convite para lecionar em uma cidade no interior dos Estados Unidos muda para sempre a vida de um jovem aspirante a escritor. Lá, ele conhece Rodney Falk, homem cínico, culto e marcado por um terrível segredo de guerra. A partir desse encontro, os personagens - tão complexos e humanos - desenvolverão uma relação tumultuosa que culminará em um enfrentamento trágico da realidade e os seus demônios.
-        </p>
+        <div id="imagem-dica">
+          <p>
+            <img src="_img/Livro_A_VELOCIDADE_DA_LUZ.jpg" class="rounded mx-auto d-block img-fluid" alt="Livro_A_VELOCIDADE_DA_LUZ.jpg">
+          </p>
+          <p>
+            <h4>
+              Livro: <a href="arquivos/livros/Livro-A-Velocidade-da-Luz-Javier-Cercas.mobi">A Velocidade da Luz - Javier Cercas</a>
+            </h4>
+          </p>
+          <p class="font-italic">
+            <strong>Resenha ofical: </strong>
+            Espanha, final dos anos 80. Um convite para lecionar em uma cidade no interior dos Estados Unidos muda para sempre a vida de um jovem aspirante a escritor. Lá, ele conhece Rodney Falk, homem cínico, culto e marcado por um terrível segredo de guerra. A partir desse encontro, os personagens - tão complexos e humanos - desenvolverão uma relação tumultuosa que culminará em um enfrentamento trágico da realidade e os seus demônios.
+          </p>
+        </div>
       </blockquote>
       <blockquote>
         <p>
