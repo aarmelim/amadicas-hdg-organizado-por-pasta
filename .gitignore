@@ -1,5 +1,7 @@
 node_modules/
 _js/vendor/
+_css/vendor/
+conexao/
 config.php
-desktop.ini
+config-dev.php
 hdg
