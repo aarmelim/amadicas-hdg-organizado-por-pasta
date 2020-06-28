@@ -35,7 +35,7 @@
       $retorno["mensagem"] = "Obrigado. Sua mensagem foi enviada com sucesso. Em breve entrarei em contato.";
     } else {
       $retorno["sucesso"] = false;
-      $retorno["mensagem"] = "Estamos com um problema para registrar sua mensagem e já estamos atuando para corrigí-lo. Favor tentar um pouco mais tarde !!";
+      $retorno["mensagem"] = "Estamos com um problema para registrar sua mensagem e já estamos atuando para corrigí-lo. Tente novamente jájá";
     }
   }
   ?>
@@ -85,6 +85,62 @@
       echo "<div class='p-3 mb-2 bg-info text-white'><p class='font-italic text-monospace'>" . $retorno['mensagem'] . "</p></div>";
     }
     ?>
+    </div><!-- /.blog-post -->
+
+    <div class="blog-post">
+      <h2 class="blog-post-title">
+        Um filme real e sensível
+      </h2>
+      <p class="blog-post-meta">
+        28 de Junho de 2020
+        <a href="#">AMADICAS</a>
+      </p>
+      <p>
+        Filme da década de 40/50 com temas mais atuais do que gostaríamos que os fossem.
+        <hr>
+      </p>
+      <blockquote>
+        <p>
+          O filme mostra como o preconceito contra a mulher pode vir de todos os lados (pai, marido, amigo do trabalho, médico). Mesmo em frases "despretensiosas". Claro que o filme é da década de 40/50 mas, infelizmente, é triste constatar o quanto isso ainda ocorre nos dias atuais.
+        </p>
+        <p>
+          Com atuações muito incríveis durante todo o filme mostra como esse tipo de preconceito pode deixar uma pessoa literalmente invisível, sem encontrar o seu lugar no mundo e sua felicidade.
+        </p>
+        <p>
+          Vale muito enaltecer, é claro, a atuação de ouro da grande Fernanda Montenegro no final, para quebrar tudo e fazer as lágrimas rolarem.
+        </p>
+      </blockquote>
+      <blockquote>
+        <div id="imagem-dica">
+          <p>
+            <img src="_img/filme_A_VIDA_INVISIVEL.jpg" class="rounded mx-auto d-block img-fluid" alt="filme_A_VIDA_INVISIVEL.jpg">
+          </p>
+          <p>
+            <h4>
+              Filme: <a href="https://www.telecineplay.com.br/filme/A_Vida_Invisivel_19822">A Vida Invisível </a>
+            </h4>
+          </p>
+          <p class="font-italic">
+            <ul>
+              <li><strong>Direção: </strong>Karim Aïnouz</li>
+              <li><strong>Elenco: </strong>Carol Duarte, Julia Stockler, Gregório Duvivier</li>
+              <li><strong>Participação mais que especial: </strong>Fernanda Montenegro</li>
+              <li><strong>Nacionalidades: </strong>Brasil, Alemanha</li>
+              <li><strong>Onde está disponível: </strong><a href="https://www.telecineplay.com.br/" target="_blank">TeleCine Play</a></li>
+            </ul>
+
+            Rio de Janeiro, década de 1940. Eurídice (Carol Duarte) é uma jovem talentosa, mas bastante introvertida. Guida (Julia Stockler) é sua irmã mais velha, e o oposto de seu temperamento em relação ao convívio social. Ambas vivem em um rígido regime patriarcal, o que faz com que trilhem caminhos distintos: Guida decide fugir de casa com o namorado, enquanto Eurídice se esforça para se tornar uma musicista, ao mesmo tempo em que precisa lidar com as responsabilidades da vida adulta e um casamento sem amor com Antenor (Gregório Duvivier).
+
+          </p>
+        </div>
+      </blockquote>
+      <blockquote>
+        <p>
+          Se estiver interessado no download do filme para assistir em casa entre em contato que tentarei conseguir para você.
+        </p>
+      </blockquote>
+      </div><!-- /.blog-post -->
+
     <div class="blog-post">
       <h2 class="blog-post-title">Minha primeira dica</h2>
       <p class="blog-post-meta">27 de Junho de 2020 <a href="#">AMADICAS</a></p>
@@ -123,50 +179,60 @@
           Esse livro mantém o leitor preso do início ao fim. Algumas reviravoltas durante a história te deixarão de boca aberta, as vezes até sem conseguir respirar. Um livro eletrizando até mesmo na forma em que é escrito, sem muitas formatações. Um livro para se ler rápido, sem parar, na velocidade da luz.
         </p>
         <p>
-          Uso o aplicativo <a href="https://www.skoob.com.br/usuario/2394404" target="_blank">Skoob</a> para registrar todos os livros que leio. É uma rede social que conecta leitores de todos os lugares do Brasil e do Mundo. Clica ai para me seguir por lá também se não tiver a paciência de esperar as indicações por aqui.
+          Uso o aplicativo <a href="https://www.skoob.com.br/usuario/2394404" target="_blank">Skoob</a> para registrar todos os livros que leio. É uma rede social que conecta leitores de tod
+          os os lugares do Brasil e do Mundo. Clica ai para me seguir por lá também se não tiver a paciência de esperar as indicações por aqui.
         </p>
         <p>
           No link acima estou disponibilizando o link para download do livro em formato epub para quem tem o kindle como eu. Nem sempre leio livros no kindle. Eu diversifico bastante entre livros digitais e em papel mesmo.
         </p>
       </blockquote>
-    </div><!-- /.blog-post -->
 
-    <nav class="blog-pagination">
-      <a class="btn btn-outline-secondary disabled" href="#">Older</a>
-      <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-    </nav>
+      <nav class="blog-pagination">
+        <a class="btn btn-outline-secondary disabled" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+      </nav>
 
-    <div id="componente-formulario-email" class="container border">
+      <aside>
+        <div class="p-3">
+            <h4 class="font-italic">Listas</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">Filmes</a></li>
+              <li><a href="#">Livros</a></li>
+              <li><a href="#">Outros</a></li>
+            </ol>
+          </div>
+      </aside><!-- /.blog-sidebar -->
 
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h3>Entre em contato</h3>
+      <div id="componente-formulario-email" class="container border">
+
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h3>Entre em contato</h3>
+          </div>
+        </div>
+        <div id="formulario_email">
+          <form action="index.php" method="post">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome (opcional)">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="descricao">Mensagem</label>
+                <textarea class="form-control" name="descricao" id="descricao" placeholder="Deixe seus comentários (opcional)"></textarea>
+              </div>
+            </div>
+            <button id="botao-enviar-email" type="submit" name="enviar" class="btn btn-primary">Enviar</button>
+          </form>
         </div>
       </div>
-      <div id="formulario_email">
-        <form action="index.php" method="post">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="nome">Nome</label>
-              <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome (opcional)">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-12">
-              <label for="descricao">Mensagem</label>
-              <textarea class="form-control" name="descricao" id="descricao" placeholder="Deixe seus comentários (opcional)"></textarea>
-            </div>
-          </div>
-
-          <button id="botao-enviar-email" type="submit" name="enviar" class="btn btn-primary">Enviar</button>
-
-        </form>
-      </div>
-    </div>
+  </div>
   </main>
 
   <footer class="blog-footer">
